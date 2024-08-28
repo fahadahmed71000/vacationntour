@@ -52,7 +52,7 @@ const Cart = () => {
       </div>
 
       {/* Cards Container */}
-      <div className="container flex flex-wrap justify-center gap-4 pt-32">
+      <div className="container flex flex-wrap justify-center gap-8 pt-32">
         {/* Map over the cards array */}
         {cards.map((card, i) => (
           <div key={card.id} className="relative w-64 h-72">
@@ -64,7 +64,7 @@ const Cart = () => {
               />
             )}
             <div
-              className="relative flex flex-col items-center bg-white px-2 py-2 rounded-3xl shadow-md w-[223px] h-72 space-x-4 z-10"
+              className="relative flex flex-col items-center bg-white px-2 py-2 rounded-3xl shadow-md h-72 space-x-4 z-10"
             > 
               <img className="w-full h-[120px] object-contain" src={card.image} alt={card.title} />
               <h1 className="pt-4 text-lg font-bold">{card.title}</h1>
